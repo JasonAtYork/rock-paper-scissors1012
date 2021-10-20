@@ -26,7 +26,7 @@ Instead of making the program choose from 3 options then judge it is a win or lo
 
 **Functional requirement:**
 
-<li>User can play their game on a brower.
+<li>User can play their game on a browser.
 <li>User can start the game by clicking the “Start Game” button on the client.
 <li>User can select rock, paper, or scissors by clicking the symbols that has the corresponding images on the bottom of the screen.
 <li>User can select “rock”, “paper”, and “scissors” by pressing the specific keys on the keyboard. “Q” for rock, “W” for paper and “E” for scissors.
