@@ -18,7 +18,7 @@ h1{
     font-weight: bold;
 }
 #content{
-    
+
     background-color: rgba(255, 255, 255, 40%);    
     width:fit-content;
     height: 95%;
@@ -29,7 +29,11 @@ h1{
 }
 .CD{
     text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 18px;
+    font-weight: bold;
 }
+
 .button{
     text-align: center;
     border-radius: 1rem;
