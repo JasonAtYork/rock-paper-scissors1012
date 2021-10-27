@@ -25,3 +25,10 @@ h1{
     border-radius: 1rem;
     margin: auto;
 }
+.button{
+    text-align: center;
+    border-radius: 1rem;
+    width:300px;
+    height:100px;
+    
+}
