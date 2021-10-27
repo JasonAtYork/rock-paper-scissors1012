@@ -53,3 +53,7 @@ h1{
     height: 105px;
     margin-bottom: 15px;
 }
+
+button:hover{
+    box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 15%);
+}
