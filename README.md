@@ -42,4 +42,4 @@ Instead of making the program choose from 3 options then judge it is a win or lo
 <li>User can see the League of Legends schedule on the edge of the screen.
 
 **Wireframe Design**
-<img src="Wireframes/OverallDesign.jpg"/>
+<img src="Wireframes/Overall Design.jpg"/>
