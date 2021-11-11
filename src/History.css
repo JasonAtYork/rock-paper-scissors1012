@@ -19,6 +19,7 @@ body {
   padding-bottom: 1rem;
   border-radius: 1rem;
   margin: auto;
+  margin-top: 10px;;
 }
 h1 {
   font-family: Comic Sans MS;
@@ -43,6 +44,7 @@ h1 {
 #widget1 {
   position: absolute;
   border: 2px solid black;
+  
   width: 330px;
   height: 295px;
   margin-left: 50px;
@@ -51,6 +53,7 @@ h1 {
 #widget2 {
   border: 2px solid black;
   float: right;
+  
   margin-right: 50px;
   width: 330px;
   height: 295px;
@@ -76,6 +79,8 @@ h1 {
 #back {
   position: relative;
   transform: translateX(-125%);
+  margin-top: 10px;
+  margin-bottom: -50px;
   width: 100px;
   height: 40px;
   border-radius: 1rem;
