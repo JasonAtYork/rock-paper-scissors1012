@@ -39,7 +39,7 @@ Instead of making the program choose from 3 options then judge it is a win or lo
 <li>User can see the weather broadcast on the edge of the screen.
 <li>User can see the covid-19 report on the edge of the screen.
 <li>User can see the stock trends on the edge of the screen.
-<li>User can see the League of Legends schedule on the edge of the screen.
+
 
 **Wireframe Design**
   
