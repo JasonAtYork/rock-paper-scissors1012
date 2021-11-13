@@ -1,66 +1,48 @@
 <!DOCTYPE html>
-
-<html lang="En">
-
-<head>
-  <meta charset="UTF-8">
-
-  <title> RNG Porject:rock paper scissors </title>
-
-  <link rel="stylesheet" type="text/css" href="Start page.css" title="style" />
-
+<html>
+<head>    
+<title>Rock Paper Scissors</title>
+<link rel="stylesheet" type="text/css" href="moban.css" title="style">
 </head>
-
 <body>
-
-  <div class="Row">
-    <div class="left">
-      <div class="weather">
-      <a class="weatherwidget-io" href="https://forecast7.com/en/43d65n79d38/toronto/" data-label_1="TORONTO" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="original" >TORONTO WEATHER</a>
-      <script>
-      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-      </script>
-</div>
-      <iframe
-        src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2021-01-03&facet=none&pickerSort=asc&pickerMetric=location&Metric=People+vaccinated+%28by+dose%29&Interval=7-day+rolling+average&Relative+to+Population=true&Align+outbreaks=false&country=ARE~PRT~CUB~CHL~ESP~SGP~KHM~URY~KOR~CAN~CHN~IND~USA~IDN~PAK~BRA~NGA~BGD~RUS~MEX~JPN~ETH~PHL~EGY~VNM~TUR~IRN~DEU~THA~GBR~FRA~TZA~ITA~ZAF~KEN~OWID_WRL&hideControls=true"
-        loading="lazy" style="width: 100%; height: 550px; border: 0px none;"></iframe>
+<div>
+    <div id = "widget1"> 
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-02573ca1-0193-4efc-bae8-5ca020c5a758"></div>
     </div>
-
-    <div class="mid">
-      <div class="npc">
-        <img src="images/3.jpg" alt="Paper" style="width: 80%">
-      </div>
-      <div calss="button">
-        <button onclick="Quit()" class="button"> Quit </button>
-      </div>
-      <div class="result">
-        -:-
-      </div>
-      <div class="player">
-        <div class="row">
-          <div class="column">
-            <img src="images/2.jpg" alt="Rock" style="width:80%">
+    <div id = "widget2">  
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-9d0d42b0-b524-4ccd-9eeb-d0dcaf23bbfc"></div>
+    </div>
+    
+        <div id = "content">    
+        <button>Quit</button>
+        <div class="npc">
+            <img src="images/3.jpg" alt="Paper" width = "160px" height="190px">
+        </div>
+          <div class="result">
+            <p id = "result"><span id = "leftscore">0 </span>:<span id = "rightscore"> 0</span></p>
           </div>
-          <div class="column">
-            <img src="images/1.jpg" alt="Scissors" style="width:80%">
-          </div>
-          <div class="column">
-            <img src="images/3.jpg" alt="Paper" style="width:80%">
+          <div class="player">
+            <div class="row">
+              
+                <img class = "column" src="images/2.jpg" alt="Rock" width = "160px" height="190px">
+              
+              
+                <img class = "column" src="images/1.jpg" alt="Scissors" width = "160px" height="190px">
+              
+              
+                <img class = "column" src="images/3.jpg" alt="Paper" width = "160px" height="190px">
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="right">
-      <br>
-      <div class="lol">
-      <a href="https://lolesports.com/schedule?leagues=worlds"><img src="images\EDG.jpg" alt="HTML tutorial"style="width: 100%"></a>
-    </div>
-    <div class="bitcoin"> 
-      <div style="height:433px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F; padding: 0px; margin: 0px; width: 100%;"><div style="height:413px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=6&pref_coin_id=1505&graph=yes" width="100%" height="409px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #FFFFFF; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #FFFFFF; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
-    </div>
-  </div>
+        <div id = "widget3">
+          <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=6&pref_coin_id=1505&graph=yes" width="100%" height="409px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
+        </div>
+    <!--<div id = "widget4"></div>-->
+</div>
 
-  </div>
+
 </body>
-
 </html>
