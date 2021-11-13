@@ -1,0 +1,93 @@
+html {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin: 0px;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+}
+#content {
+  background-color: rgba(255, 255, 255, 40%);
+  width: fit-content;
+  height: 95%;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 10px;;
+}
+h1 {
+  font-family: Comic Sans MS;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+#score {
+  padding-right: 10%;
+  padding-left: 10%;
+  letter-spacing: 5px;
+  border-style: none;
+  border-color: black;
+  border-width: 2px;
+}
+#winlose {
+  text-align: center;
+  font-family: Comic Sans MS;
+  font-size: 28px;
+}
+#widget1 {
+  position:absolute;
+    /*border: 2px solid black;*/      
+    width: 330px;
+    height: 295px;
+    margin-left: 50px;
+    transform: translateX(15px);
+}
+
+#widget2 {
+  /*border: 2px solid black;*/ 
+  float:right;
+  margin-right: 50px;  
+  width: 330px;
+  height: 450px;
+  border-radius: 1rem;
+  overflow: hidden; 
+}
+/*#widget4 {
+  border: 2px solid black;
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  transform: translateY(-100%);
+  width: 330px;
+  height: 295px;
+}*/
+#widget3 {
+  float: left;
+    margin-top: -5px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    transform: translateY(-100%);
+    width: 330px;
+    height: 295px;
+    border-radius: 1rem;
+    overflow: hidden;    
+}
+#back {
+  position: relative;
+  transform: translateX(-125%);
+  margin-top: 10px;
+  margin-bottom: -50px;
+  width: 100px;
+  height: 40px;
+  border-radius: 1rem;
+}
+button:hover {
+  box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 15%);
+}
