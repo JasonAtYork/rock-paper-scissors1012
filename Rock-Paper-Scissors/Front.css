@@ -63,7 +63,7 @@ button:hover{
 #widget1{
     position:absolute;
     /*border: 2px solid black;*/      
-    width: 330px;
+    width: 20%;
     height: 295px;
     margin-left: 50px;
     transform: translateX(15px);     
@@ -73,7 +73,7 @@ button:hover{
     /*border: 2px solid black;*/ 
     float:right;
     margin-right: 50px;  
-    width: 330px;
+    width: 22%;
     height: 450px;
     border-radius: 1rem;
     overflow: hidden;       
@@ -84,7 +84,7 @@ button:hover{
     margin-bottom: 50px;
     margin-top: 10px;;
     transform: translateY(-100%);
-    width: 330px;
+    width: 22%;
     height: 295px;
     border-radius: 1rem;
     overflow: hidden;    

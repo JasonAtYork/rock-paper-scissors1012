@@ -120,10 +120,10 @@ function showhis() {/*only for testing*/
 }
 
 function back() {/*link to history button*/
-    window.location.assign("test page.html");
+    window.location.assign("RockPaperScissors.html");
 }
 
 function quit() {/*link to history button*/
-    window.location.assign("Rock-Paper-Scissors.html");
+    window.location.assign("RockPaperScissors.html");
 }
 //By DD
