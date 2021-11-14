@@ -60,7 +60,7 @@ function paper() {
 
     }
     alert(i + "!");
-    //alert(judge() + "!");/*pop up*/
+    //alert(judge() + "!");/*pop udddp*/
 }
 function rock() {
     generate();
