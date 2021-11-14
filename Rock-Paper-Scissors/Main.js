@@ -44,26 +44,26 @@ function paper() {
     generate();
     judge();
     if (judge() == "tie") {
-        document.getElementById("botchocie").setAttribute("src", "paper.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
     }
     if (judge() == "lose") {
-        document.getElementById("botchocie").setAttribute("src", "scissors.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
     }
     if (judge() == "win") {
-        document.getElementById("botchocie").setAttribute("src", "rock.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
     }
     alert(judge() + "!");/*pop up*/
 }
 function rock() {
     generate();
     if (judge() == "tie") {
-        document.getElementById("botchocie").setAttribute("src", "rock.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
     }
     if (judge() == "lose") {
-        document.getElementById("botchocie").setAttribute("src", "paper.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
     }
     if (judge() == "win") {
-        document.getElementById("botchocie").setAttribute("src", "scissors.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
     }
     alert(judge() + "!");
 }
@@ -71,13 +71,13 @@ function scissors() {
     generate();
     judge();
     if (judge() == "tie") {
-        document.getElementById("botchocie").setAttribute("src", "scissors.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
     }
     if (judge() == "lose") {
-        document.getElementById("botchocie").setAttribute("src", "rock.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
     }
     if (judge() == "win") {
-        document.getElementById("botchocie").setAttribute("src", "paper.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
     }
     alert(judge() + "!");
 }
