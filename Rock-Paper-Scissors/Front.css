@@ -24,9 +24,11 @@ h1{
     height: 95%;
     padding-left:60px;
     padding-right:60px;
+    
     padding-bottom: 1rem;  
     border-radius: 1rem;
     margin: auto;
+    margin-top: -15px;
 }
 .CD{
     text-align: center;
@@ -60,29 +62,34 @@ button:hover{
 }
 #widget1{
     position:absolute;
-    border: 2px solid black;        
+    /*border: 2px solid black;*/      
     width: 330px;
     height: 295px;
-    margin-left: 50px;   
+    margin-left: 50px;
+    transform: translateX(15px);     
 }
 
 #widget2{    
-    border: 2px solid black;
+    /*border: 2px solid black;*/ 
     float:right;
     margin-right: 50px;  
     width: 330px;
-    height: 295px;    
+    height: 450px;
+    border-radius: 1rem;
+    overflow: hidden;       
 }
 #widget3{  
-    border: 2px solid black;
-    float: right;
-    margin-right: 50px;
+    float: left;
+    margin-left: 50px;
     margin-bottom: 50px;
+    margin-top: 10px;;
     transform: translateY(-100%);
     width: 330px;
-    height: 295px;    
+    height: 295px;
+    border-radius: 1rem;
+    overflow: hidden;    
 }
-#widget4{  
+/*#widget3{  
     border: 2px solid black;
     float: left;
     margin-left: 50px;
@@ -90,4 +97,4 @@ button:hover{
     transform: translateY(-100%);
     width: 330px;
     height: 295px;    
-}
+}*/

@@ -3,6 +3,7 @@
 <head>    
 <title>Rock Paper Scissors</title>
 <link rel="stylesheet" type="text/css" href="GamingPage.css" title="style">
+<script src = "Main.js"></script>
 </head>
 <body>
 <div>
@@ -16,7 +17,7 @@
     </div>
     
         <div id = "content">    
-        <button>Quit</button>
+        <button onclick="quit()">Quit</button>
         <div class="npc">
             <img id = "botchoice" src="null" alt="npc's symbol" width = "25%" height="190px">
         </div>
@@ -26,13 +27,13 @@
           <div class="player">
             <div class="row">
               
-                <img class = "column" src="images/rock.jpg" alt="Rock" width = "25%" height="190px">
+                <img class = "column" onclick = "rock()" src="images/rock.jpg" alt="Rock" width = "25%" height="190px">
               
               
-                <img class = "column" src="images/scissors.jpg" alt="Scissors" width = "25%" height="190px">
+                <img class = "column" onclick = "scissors()" src="images/scissors.jpg" alt="Scissors" width = "25%" height="190px">
               
               
-                <img class = "column" src="images/paper.jpg" alt="Paper" width = "25%" height="190px">
+                <img class = "column" onclick = "paper()" src="images/paper.jpg" alt="Paper" width = "25%" height="190px">
               </div>
             </div>
           </div>
