@@ -2,13 +2,13 @@ html{
     width: 100%;
     height: 100%;
     position:fixed;
-    margin:0px;
+    margin:0%;
     background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
 body{
     height: 100%;
-    margin:0px;
+    margin:0%;
 }
 
 h1{
@@ -85,7 +85,7 @@ button:hover{
     margin-left: 50px;
     margin-bottom: 50px;
     transform: translateY(-100%);
-    width: 330px;
+    width: 21.5%;
     height: 295px;
     border-radius: 1rem;
     overflow: hidden;    

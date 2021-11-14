@@ -29,10 +29,10 @@ function judge() {
         playercount = playercount+1; /*record history*/
         return "win";
     }
-    if (randomnumber >= 4 && randomnumber < 6) {
+    else if (randomnumber >= 4 && randomnumber < 6) {
         return "tie";
     }
-    if (randomnumber >= 6) {
+    else if (randomnumber >= 6) {
         botcount = botcount + 1;/*having iussue that this is counting 5 times not 1)
         alert(botcount);/*record history*/
         return "lose";
@@ -42,28 +42,29 @@ function judge() {
 
 function paper() { 
     generate();
+    
     judge();
     if (judge() == "tie") {
-        document.getElementById("botchocie").setAttribute("src", "paper.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
     }
-    if (judge() == "lose") {
-        document.getElementById("botchocie").setAttribute("src", "scissors.jpg");/*need attach picture*/
+    else if (judge() == "lose") {
+        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
     }
-    if (judge() == "win") {
-        document.getElementById("botchocie").setAttribute("src", "rock.jpg");/*need attach picture*/
+    else if (judge() == "win") {
+        document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
     }
     alert(judge() + "!");/*pop up*/
 }
 function rock() {
     generate();
     if (judge() == "tie") {
-        document.getElementById("botchocie").setAttribute("src", "rock.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
     }
-    if (judge() == "lose") {
-        document.getElementById("botchocie").setAttribute("src", "paper.jpg");/*need attach picture*/
+    else if (judge() == "lose") {
+        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
     }
-    if (judge() == "win") {
-        document.getElementById("botchocie").setAttribute("src", "scissors.jpg");/*need attach picture*/
+    else if (judge() == "win") {
+        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
     }
     alert(judge() + "!");
 }
@@ -71,13 +72,13 @@ function scissors() {
     generate();
     judge();
     if (judge() == "tie") {
-        document.getElementById("botchocie").setAttribute("src", "scissors.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
     }
-    if (judge() == "lose") {
-        document.getElementById("botchocie").setAttribute("src", "rock.jpg");/*need attach picture*/
+    else if (judge() == "lose") {
+        document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
     }
-    if (judge() == "win") {
-        document.getElementById("botchocie").setAttribute("src", "paper.jpg");/*need attach picture*/
+    else if (judge() == "win") {
+        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
     }
     alert(judge() + "!");
 }
@@ -94,7 +95,7 @@ function Restart() { /*link to restart button*/
     botcount = 0;
 }
 function seldif() { /*link to select difficultiy button*/
-    diflevel = prompt("please enter a difficiculty(From Easy;Normal;Hard");
+    diflevel = prompt("please enter a difficiculty(From Easy; Normal; Hard");
 }
 
 function history() {/*link to history button*/
@@ -107,7 +108,7 @@ function showhis() {/*only for testing*/
 }
 
 function back() {/*link to history button*/
-    window.location.assign("test page.html");
+    window.location.assign("Rock-Paper-Scissors.html");
 }
 
 function quit() {/*link to history button*/

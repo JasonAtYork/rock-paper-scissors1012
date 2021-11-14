@@ -3,6 +3,7 @@
 <head>    
 <title>Rock Paper Scissors</title>
 <link rel="stylesheet" type="text/css" href="Front.css" title="style">
+<script src="Main.js"></script>
 </head>
 <body>
 <div>
@@ -20,9 +21,9 @@
         <img id = "img1" src = RPS1.jpg alt = "Rock Paper Scissors">
             <div class = "but">
                 <p class = "CD">Current Difficulty: <span id = "difficulty">------</span></p>
-                <button class = "button" id="firstbutton" type = "submit">Start Game</button><br>
-                <button class = "button" type = "submit">Select Difficulty</button><br>
-                <button class = "button" id = "thirdbutton" type = "submit">Match History</button>
+                <button class = "button" onclick="start()"id="firstbutton" type = "submit">Start Game</button><br>
+                <button class = "button" onclick="seldif()" type = "submit">Select Difficulty</button><br>
+                <button class = "button" onclick="history()"id = "thirdbutton" type = "submit">Match History</button>
             </div>
         </div>
     <div id = "widget3">
