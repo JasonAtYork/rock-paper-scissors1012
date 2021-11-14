@@ -46,10 +46,10 @@ function paper() {
     if (judge() == "tie") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
     }
-    if (judge() == "lose") {
+    else if (judge() == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
     }
-    if (judge() == "win") {
+    else if (judge() == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
     }
     alert(judge() + "!");/*pop up*/
@@ -59,10 +59,10 @@ function rock() {
     if (judge() == "tie") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
     }
-    if (judge() == "lose") {
+    else if (judge() == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
     }
-    if (judge() == "win") {
+    else if (judge() == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
     }
     alert(judge() + "!");
@@ -73,10 +73,10 @@ function scissors() {
     if (judge() == "tie") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
     }
-    if (judge() == "lose") {
+    else if (judge() == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
     }
-    if (judge() == "win") {
+    else if (judge() == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
     }
     alert(judge() + "!");
@@ -94,7 +94,7 @@ function Restart() { /*link to restart button*/
     botcount = 0;
 }
 function seldif() { /*link to select difficultiy button*/
-    diflevel = prompt("please enter a difficiculty(From Easy;Normal;Hard");
+    diflevel = prompt("please enter a difficiculty(From Easy; Normal; Hard");
 }
 
 function history() {/*link to history button*/
@@ -107,7 +107,7 @@ function showhis() {/*only for testing*/
 }
 
 function back() {/*link to history button*/
-    window.location.assign("test page.html");
+    window.location.assign("Rock-Paper-Scissors.html");
 }
 
 function quit() {/*link to history button*/
