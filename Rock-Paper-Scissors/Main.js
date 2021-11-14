@@ -1,10 +1,8 @@
-////By dd
-var playercount = 0;
-var botcount = 0;
-var diflevel = "normal";
-if (playercount == 3 || botcount == 3) {
-    break;
-}
+//By DD
+var playercount=0;
+var botcount=0;
+var diflevel = "normal"; //问题根源
+
 
 function generate() {
     switch (diflevel) {
@@ -29,7 +27,7 @@ function generate() {
 //generate a number by selected difficulty
 function judge() {
     if (randomnumber < 4) {
-        playercount = playercount + 1; /*record history*/
+        playercount = playercount+1; /*record history*/
         return "win";
     }
     if (randomnumber >= 4 && randomnumber < 6) {
@@ -43,9 +41,9 @@ function judge() {
 }
 //judge win or lose
 
-function paper() {
+function paper() { 
     generate();
-    var i = judge();
+    var i=judge();
     if (i == "tie") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
@@ -57,25 +55,25 @@ function paper() {
     if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
-
+       
     }
     alert(i + "!");
-    //alert(judge() + "!");/*pop udddp*/
+    //alert(judge() + "!");/*pop up*/
 }
 function rock() {
     generate();
     var i = judge();
     if (i == "tie") {
-        document.getElementById("botchoice").setAttribute("src", "images/rock.jpg");/*need attach picture*/
-        document.getElementById("botchoice").style.display = "inline";
+        document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
+        document.getElementById("botchocie").style.display = "inline";
     }
     if (i == "lose") {
-        document.getElementById("botchoice").setAttribute("src", "images/paper.jpg");/*need attach picture*/
-        document.getElementById("botchoice").style.display = "inline";
+        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
+        document.getElementById("botchocie").style.display = "inline";
     }
     if (i == "win") {
-        document.getElementById("botchoice").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
-        document.getElementById("botchoice").style.display = "inline";
+        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
+        document.getElementById("botchocie").style.display = "inline";
     }
     alert(i + "!");
 }
@@ -83,16 +81,16 @@ function scissors() {
     generate();
     var i = judge();
     if (i == "tie") {
-        document.getElementById("botchoice").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
-        document.getElementById("botchoice").style.display = "inline";
+        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
+        document.getElementById("botchocie").style.display = "inline";
     }
     if (i == "lose") {
-        document.getElementById("botchoice").setAttribute("src", "images/rock.jpg");/*need attach picture*/
-        document.getElementById("botchoice").style.display = "inline";
+        document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
+        document.getElementById("botchocie").style.display = "inline";
     }
     if (i == "win") {
-        document.getElementById("botchoice").setAttribute("src", "images/paper.jpg");/*need attach picture*/
-        document.getElementById("botchoice").style.display = "inline";
+        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
+        document.getElementById("botchocie").style.display = "inline";
     }
     alert(i + "!");
 }
@@ -104,7 +102,7 @@ function scissors() {
 function start() { /*link to start button and the right page*/
     window.location.assign("GamingPage.html");
 }
-function Restart() { /*link to restart button*/
+function Restart() { /*link to restart button*/   
     playercount = 0;
     botcount = 0;
 }
@@ -122,10 +120,10 @@ function showhis() {/*only for testing*/
 }
 
 function back() {/*link to history button*/
-    window.location.assign("RockPaperScissors.html");
+    window.location.assign("test page.html");
 }
 
 function quit() {/*link to history button*/
-    window.location.assign("RockPaperScissors.html");
+    window.location.assign("Rock-Paper-Scissors.html");
 }
 //By DD
