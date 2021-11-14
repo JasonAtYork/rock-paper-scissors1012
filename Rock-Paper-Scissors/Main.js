@@ -66,16 +66,16 @@ function rock() {
     generate();
     var i = judge();
     if (i == "tie") {
-        document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
-        document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchoice").setAttribute("src", "images/rock.jpg");/*need attach picture*/
+        document.getElementById("botchoice").style.display = "inline";
     }
     if (i == "lose") {
-        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
-        document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchoice").setAttribute("src", "images/paper.jpg");/*need attach picture*/
+        document.getElementById("botchoice").style.display = "inline";
     }
     if (i == "win") {
-        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
-        document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchoice").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
+        document.getElementById("botchoice").style.display = "inline";
     }
     alert(i + "!");
 }
@@ -83,16 +83,16 @@ function scissors() {
     generate();
     var i = judge();
     if (i == "tie") {
-        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
-        document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchoice").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
+        document.getElementById("botchoice").style.display = "inline";
     }
     if (i == "lose") {
-        document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
-        document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchoice").setAttribute("src", "images/rock.jpg");/*need attach picture*/
+        document.getElementById("botchoice").style.display = "inline";
     }
     if (i == "win") {
-        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
-        document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchoice").setAttribute("src", "images/paper.jpg");/*need attach picture*/
+        document.getElementById("botchoice").style.display = "inline";
     }
     alert(i + "!");
 }
