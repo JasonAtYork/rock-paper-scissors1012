@@ -4,6 +4,7 @@
 <title>Rock Paper Scissors</title>
 <link rel="stylesheet" type="text/css" href="GamingPage.css" title="style">
 <script src="Main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div>
@@ -19,7 +20,7 @@
         <div id = "content">    
         <button onclick="quit()">Quit</button>
         <div class="npc">
-            <img id = "botchocie" src="null" alt="Paper" width = "160px" height="190px">
+            <!--<img id = "botchocie" src="null" alt="Paper" width = "160px" height="190px">-->
         </div>
           <div class="result">
             <p id = "result"><span id = "leftscore">0 </span>:<span id = "rightscore"> 0</span></p>
@@ -27,13 +28,13 @@
           <div class="player">
             <div class="row">
               
-                <img class = "column" onclick="rock()" src="images/rock.jpg" alt="Rock" width = "160px" height="190px">
+                <img class = "column" onclick="rock()" src="images/rock.jpg" alt="Rock" width = "30%" height="190px">
               
               
-                <img class = "column" onclick="scissors()" src="images/paper.jpg" alt="Scissors" width = "160px" height="190px">
+                <img class = "column" onclick="scissors()" src="images/paper.jpg" alt="Scissors" width = "30%" height="190px">
               
               
-                <img class = "column" onclick="paper()" src="images/scissors.jpg" alt="Paper" width = "160px" height="190px">
+                <img class = "column" onclick="paper()" src="images/scissors.jpg" alt="Paper" width = "30%" height="190px">
               </div>
             </div>
           </div>

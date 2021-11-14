@@ -42,6 +42,7 @@ function judge() {
 
 function paper() { 
     generate();
+    
     judge();
     if (judge() == "tie") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
