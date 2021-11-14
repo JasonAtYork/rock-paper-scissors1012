@@ -45,10 +45,12 @@ function paper() {
     
     judge();
     if (judge() == "tie") {
-        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");
+        /*need attach picture*/
     }
     else if (judge() == "lose") {
-        document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
+        document.getElementById("botchocie").setAttribute("src", "images/Scissors.jpg");
+        /*need attach picture*/
     }
     else if (judge() == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
