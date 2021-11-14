@@ -84,14 +84,14 @@ button{
 }
 .npc{
     border: 2px solid black;
-    width: 25%; 
+    width: 160px; 
     height: 190px;
     margin-left:50%;
     transform: translateX(-50%);
 }
 .column{
     border: 2px solid black;
-    width: 25%; 
+    width: 160px; 
     height: 190px;
     margin-left: 15px;
 }
@@ -102,6 +102,6 @@ button{
     box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 15%);
 }
 .row{
-    margin-top: 15%;
+    margin-top: 20%;
     text-align: center;
 }
