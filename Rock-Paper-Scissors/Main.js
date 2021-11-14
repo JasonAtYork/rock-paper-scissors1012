@@ -29,10 +29,10 @@ function judge() {
         playercount = playercount+1; /*record history*/
         return "win";
     }
-    if (randomnumber >= 4 && randomnumber < 6) {
+    else if (randomnumber >= 4 && randomnumber < 6) {
         return "tie";
     }
-    if (randomnumber >= 6) {
+    else if (randomnumber >= 6) {
         botcount = botcount + 1;/*having iussue that this is counting 5 times not 1)
         alert(botcount);/*record history*/
         return "lose";
