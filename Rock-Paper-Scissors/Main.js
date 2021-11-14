@@ -1,7 +1,10 @@
-//By DD
-var playercount=0;
-var botcount=0;
-var diflevel="normal";
+////By dd
+var playercount = 0;
+var botcount = 0;
+var diflevel = "normal"; //问题根源
+if (playercount == 3 || botcount == 3) {
+    break;
+}
 
 function generate() {
     switch (diflevel) {
@@ -26,7 +29,7 @@ function generate() {
 //generate a number by selected difficulty
 function judge() {
     if (randomnumber < 4) {
-        playercount = playercount+1; /*record history*/
+        playercount = playercount + 1; /*record history*/
         return "win";
     }
     if (randomnumber >= 4 && randomnumber < 6) {
@@ -99,14 +102,14 @@ function scissors() {
 
 
 function start() { /*link to start button and the right page*/
-    window.location.assign("gamepage.html");
+    window.location.assign("GamingPage.html");
 }
-function Restart() { /*link to restart button*/   
+function Restart() { /*link to restart button*/
     playercount = 0;
     botcount = 0;
 }
 function seldif() { /*link to select difficultiy button*/
-    diflevel = prompt("please enter a diffic ");
+    diflevel = prompt("please enter a difficiculty(From Easy;Normal;Hard)");
 }
 
 function history() {/*link to history button*/
@@ -122,4 +125,7 @@ function back() {/*link to history button*/
     window.location.assign("test page.html");
 }
 
+function quit() {/*link to history button*/
+    window.location.assign("Rock-Paper-Scissors.html");
+}
 //By DD
