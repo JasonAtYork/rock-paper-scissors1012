@@ -1,7 +1,7 @@
 ////By dd
 var playercount = 0;
 var botcount = 0;
-var diflevel = "normal"; //�����Դ
+var diflevel = "normal";
 if (playercount == 3 || botcount == 3) {
     break;
 }
