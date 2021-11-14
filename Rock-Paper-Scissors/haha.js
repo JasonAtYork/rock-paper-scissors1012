@@ -49,11 +49,11 @@ function paper() {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
     }
-    if (i == "lose") {
+    else if (i == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
     }
-    if (i == "win") {
+    else if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
 
@@ -68,11 +68,11 @@ function kk() {
         document.getElementById("botchoice").setAttribute("src", "images/rock.jpg");/*need attach picture*/
         document.getElementById("botchoice").style.display = "inline";
     }
-    if (i == "lose") {
+    else if (i == "lose") {
         document.getElementById("botchoice").setAttribute("src", "images/paper.jpg");/*need attach picture*/
         document.getElementById("botchoice").style.display = "inline";
     }
-    if (i == "win") {
+    else if (i == "win") {
         document.getElementById("botchoice").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
         document.getElementById("botchoice").style.display = "inline";
     }
