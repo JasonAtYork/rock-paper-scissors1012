@@ -51,12 +51,15 @@ function paper() {
     if (i == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+ 
     }
     if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
        
     }
+    document.getElementById("botcount").innerHTML = botcount;
+    document.getElementById("playercount").innerHTML = playercount;
     setTimeout(check, 100);
     //alert(judge() + "!");/*pop up*/
 }
@@ -70,11 +73,14 @@ function rock() {
     if (i == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+   
     }
     if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
     }
+    document.getElementById("botcount").innerHTML = botcount;
+    document.getElementById("playercount").innerHTML = playercount;
     setTimeout(check, 100);
 }
 function scissors() {
@@ -87,13 +93,15 @@ function scissors() {
     if (i == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
-        document.getElementById("botcount").innerHTML= botcount;
+
     }
     if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
-        document.getElementById("playercount").innerHTML = playercount;
+  
     }
+    document.getElementById("botcount").innerHTML = botcount;
+    document.getElementById("playercount").innerHTML = playercount;
     setTimeout(check, 100);
     
 }
