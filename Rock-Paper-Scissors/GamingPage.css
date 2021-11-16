@@ -18,6 +18,7 @@ h1{
     font-weight: bold;
 }
 #content{
+    
     background-color: rgba(255, 255, 255, 40%);    
     width: fit-content;
     height: 95%;
@@ -57,9 +58,9 @@ button{
 #widget1{
     position:absolute;
     /*border: 2px solid black;*/      
-    width: 330px;
+    width: 20%;
     height: 295px;
-    margin-left: 50px;
+    margin-left: 50px;    
     transform: translateX(15px);     
 }
 
@@ -67,17 +68,18 @@ button{
     /*border: 2px solid black;*/ 
     float:right;
     margin-right: 50px;  
-    width: 330px;
+    width: 22%;
     height: 450px;
     border-radius: 1rem;
     overflow: hidden;   
 }
-#widget3{     
+#widget3{
+    position: relative;     
     float: left;
     margin-left: 50px;
     margin-bottom: 50px;
     transform: translateY(-100%);
-    width: 330px;
+    width: 22%;
     height: 295px;
     border-radius: 1rem;
     overflow: hidden;  
