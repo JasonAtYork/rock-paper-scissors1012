@@ -14,17 +14,16 @@ body{
 h1{
     font-family: Comic Sans MS;
     text-align: center;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: bold;
 }
 #content{
-
+    position: relative;
     background-color: rgba(255, 255, 255, 40%);    
-    width:fit-content;
-    height: 95%;
+    width:32vw;
+    height: auto;
     padding-left:60px;
-    padding-right:60px;
-    
+    padding-right:60px;    
     padding-bottom: 1rem;  
     border-radius: 1rem;
     margin: auto;
@@ -33,18 +32,19 @@ h1{
 .CD{
     text-align: center;
     font-family: Comic Sans MS;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: bold;
 }
 
 .button{
+    position: relative;
     text-align: center;
     border-radius: 1rem;
-    width:300px;
-    height:100px;
-    margin: 50px 0 0 50%;
+    width:60%;
+    height: 100px;
+    margin: 10% 0 0 50%;
     transform: translateX(-50%);
-    font-size: 22px;
+    font-size: 1.2vw;
     font-family: Comic Sans MS;
 }
 #firstbutton{
@@ -52,9 +52,10 @@ h1{
 }
 
 #img1{
-    width: 475px;
-    height: 105px;
-    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
 }
 
 button:hover{
@@ -62,30 +63,33 @@ button:hover{
 }
 #widget1{
     position:absolute;
-    /*border: 2px solid black;*/      
-    width: 20%;
-    height: 295px;
-    margin-left: 50px;
-    transform: translateX(15px);     
+    /*border: 2px solid black;*/
+    border-radius: 1rem;
+    width: 19.7%;
+    height: 53.7%;
+    margin-left: 3.5%;
+    transform: translateX(20px);
+    overflow: hidden;   
 }
 
 #widget2{    
     /*border: 2px solid black;*/ 
     float:right;
-    margin-right: 50px;  
+    margin-right: 3.5%;  
     width: 22%;
     height: 450px;
     border-radius: 1rem;
     overflow: hidden;       
 }
 #widget3{  
+    position:absolute;    
     float: left;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    margin-top: 10px;;
-    transform: translateY(-100%);
+    /*border: 2px solid black;*/
+    margin-left: 3.5%; 
+    margin-top: 0.5%;  
+    transform: translateY(-100%);    
     width: 22%;
-    height: 295px;
+    height: auto;
     border-radius: 1rem;
     overflow: hidden;    
 }
