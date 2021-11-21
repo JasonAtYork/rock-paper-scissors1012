@@ -61,14 +61,21 @@ h1{
 button:hover{
     box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 15%);
 }
+.leftwidgets{
+    float: left;
+    /*border:2px solid black;*/
+    border-radius: 1rem;
+    margin-left: 3.5%;
+    width: 19.7%;
+    height: auto;
+}
 #widget1{
-    position:absolute;
+    position:relative;
     /*border: 2px solid black;*/
     border-radius: 1rem;
-    width: 19.7%;
-    height: 53.7%;
-    margin-left: 3.5%;
-    transform: translateX(20px);
+    width: 100%;
+    height: 390px;
+    transform: translateX(5%);
     overflow: hidden;   
 }
 
@@ -81,15 +88,14 @@ button:hover{
     border-radius: 1rem;
     overflow: hidden;       
 }
+
 #widget3{  
-    position:absolute;    
+    position:relative;    
     float: left;
-    /*border: 2px solid black;*/
-    margin-left: 3.5%; 
-    margin-top: 0.5%;  
-    transform: translateY(-100%);    
-    width: 22%;
-    height: auto;
+    /*border: 2px solid black;*/   
+    width: 110%;
+    margin-top: 2.5%;
+    height: 295px;
     border-radius: 1rem;
     overflow: hidden;    
 }
