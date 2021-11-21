@@ -11,11 +11,12 @@ body {
   margin: 0px;
 }
 #content {
+  position: relative;
   background-color: rgba(255, 255, 255, 40%);
-  width: fit-content;
+  width: 20vw;
   height: 95%;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 1rem;
   border-radius: 1rem;
   margin: auto;
@@ -24,14 +25,14 @@ body {
 h1 {
   font-family: Comic Sans MS;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.8vw;
   font-weight: bold;
   margin: 0;
 }
 #score {
   padding-right: 10%;
   padding-left: 10%;
-  letter-spacing: 5px;
+  word-spacing: 0.2vw;
   border-style: none;
   border-color: black;
   border-width: 2px;
@@ -39,25 +40,45 @@ h1 {
 #winlose {
   text-align: center;
   font-family: Comic Sans MS;
-  font-size: 28px;
+  font-size: 1.8vw;
 }
-#widget1 {
-  position:absolute;
-    /*border: 2px solid black;*/      
-    width: 20%;
-    height: 295px;
-    margin-left: 50px;
-    transform: translateX(15px);
+.leftwidgets{
+  float: left;
+  /*border:2px solid black;*/
+  border-radius: 1rem;
+  margin-left: 3.5%;
+  width: 19.7%;
+  height: auto;
+}
+#widget1{
+  position:relative;
+  /*border: 2px solid black;*/
+  border-radius: 1rem;
+  width: 100%;
+  height: 390px;
+  transform: translateX(5%);
+  overflow: hidden;   
 }
 
-#widget2 {
+#widget2{    
   /*border: 2px solid black;*/ 
   float:right;
-  margin-right: 50px;  
+  margin-right: 3.5%;  
   width: 22%;
   height: 450px;
   border-radius: 1rem;
-  overflow: hidden;
+  overflow: hidden;       
+}
+
+#widget3{  
+  position:relative;    
+  float: left;
+  /*border: 2px solid black;*/   
+  width: 110%;
+  margin-top: 2.5%;
+  height: 295px;
+  border-radius: 1rem;
+  overflow: hidden;    
 }
 /*#widget3 {
   border: 2px solid black;
@@ -68,22 +89,13 @@ h1 {
   width: 330px;
   height: 295px;
 }*/
-#widget3 {
-  float: left;
-    margin-left: 50px;
-    margin-bottom: 50px;   
-    transform: translateY(-100%);
-    width: 22%;
-    height: 295px;
-    border-radius: 1rem;
-    overflow: hidden;
-}
 #back {
   position: relative;
   transform: translateX(-125%);
-  margin-top: 10px;
+  float: left;
+  margin-top: 4%;
   margin-bottom: -50px;
-  width: 100px;
+  width: 30%;
   height: 40px;
   border-radius: 1rem;
 }

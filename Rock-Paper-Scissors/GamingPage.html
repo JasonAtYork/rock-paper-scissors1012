@@ -6,11 +6,15 @@
 <script src = "Main.js"></script>
 </head>
 <body>
-<div>
+  <div class = "leftwidgets">
     <div id = "widget1"> 
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div class="elfsight-app-02573ca1-0193-4efc-bae8-5ca020c5a758"></div>
     </div>
+    <div id = "widget3">
+      <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=6&pref_coin_id=1505&graph=yes" width="100%" height="409px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" style="border:0;margin:0;padding:0;"></iframe>
+    </div>
+  </div>
     <div id = "widget2">  
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div class="elfsight-app-9d0d42b0-b524-4ccd-9eeb-d0dcaf23bbfc"></div>
@@ -19,28 +23,26 @@
         <div id = "content">    
         <button onclick= "quit()">Quit</button>
         <div class="npc">
-            <img id = "botchocie" src="null" alt="npc's symbol" width = "100%" height="190px">
+            <img id = "botchocie" src="null" alt="npc's symbol">
         </div>
           <div class="result">
-            <p id = "result"><span id = "playercount">0</span>:<span id = "botcount"> 0</span></p>
+            <p id = "result"><span id = "playercount">0</span>:<span id = "botcount">0</span></p>
           </div>
           <div class="player">
             <div class="row">
               
-                <img class = "column" onclick = "rock()" src="images/rock.jpg" alt="Rock" width = "25%" height="190px">
+                <img class = "column" onclick = "rock()" src="images/rock.jpg" alt="Rock">
               
               
-                <img class = "column" onclick = "scissors()" src="images/scissors.jpg" alt="Scissors" width = "25%" height="190px">
+                <img class = "column" onclick = "scissors()" src="images/scissors.jpg" alt="Scissors">
               
               
-                <img class = "column" onclick = "paper()" src="images/paper.jpg" alt="Paper" width = "25%" height="190px">
+                <img class = "column" onclick = "paper()" src="images/paper.jpg" alt="Paper">
               </div>
             </div>
           </div>
-        </div>
-        <div id = "widget3">
-          <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=6&pref_coin_id=1505&graph=yes" width="100%" height="409px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" style="border:0;margin:0;padding:0;"></iframe>
-        </div>
+        
+        
     <!--<div id = "widget4"></div>-->
 </div>
 
