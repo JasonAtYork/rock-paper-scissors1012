@@ -42,14 +42,12 @@ h1{
     border-radius: 1rem;
     width:60%;
     height: 100px;
-    margin: 10% 0 0 50%;
+    margin: 30% 0 0 50%;
     transform: translateX(-50%);
     font-size: 1.2vw;
     font-family: Comic Sans MS;
 }
-#firstbutton{
-    margin-top: 0%;
-}
+
 
 #img1{
     position: relative;
@@ -98,6 +96,11 @@ button:hover{
     height: 295px;
     border-radius: 1rem;
     overflow: hidden;    
+}
+footer{
+    text-align: center;
+    margin-top: 40%;
+    font-size: 1vw;
 }
 /*#widget3{  
     border: 2px solid black;

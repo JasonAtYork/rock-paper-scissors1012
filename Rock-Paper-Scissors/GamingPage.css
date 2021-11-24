@@ -65,6 +65,14 @@ button{
     width: 19.7%;
     height: auto;
 }
+.rightwidgets{
+    float: right;
+    /*border:2px solid black;*/
+    border-radius: 1rem;
+    margin-right: 3.5%;
+    width: 19.7%;
+    height: auto;
+}
 #widget1{
     position:relative;
     /*border: 2px solid black;*/
@@ -76,13 +84,39 @@ button{
 }
 
 #widget2{    
-    /*border: 2px solid black;*/ 
-    float:right;
-    margin-right: 3.5%;  
-    width: 22%;
-    height: 450px;
+    /*border: 2px solid black;*/
+    float:right; 
+    width: 100%;
+    height: 425px;
     border-radius: 1rem;
     overflow: hidden;       
+}
+#CD{
+    border: 2px solid black; 
+    float:right;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+    border-radius: 1rem;
+    overflow: hidden;      
+}
+#CD p{
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+#changediff{
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-family: Comic Sans MS;
+    font-size: 0.8vw;
+    font-weight: bold;
+    margin-left: 50%;
+    margin-bottom: 5%;
+    transform: translateX(-50%);
 }
 #widget3{  
     position:relative;    
