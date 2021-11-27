@@ -176,7 +176,12 @@ function Restart() { /*link to restart button*/
     botcount = 0;
 }
 function seldif() { /*link to select difficultiy button*/
-    diflevel = prompt("please enter a difficiculty(From Easy;Normal;Hard)");
+    diflevel = prompt("please enter a difficiculty by enter easy/normal/hard, or something special? (Entering other words will be set to normal).");
+    $.post(
+        url+'?data='+JSON.stringify({
+        'diff':diflevel, 
+        }),
+        response);
 }
 
 function history() {/*link to history button*/
