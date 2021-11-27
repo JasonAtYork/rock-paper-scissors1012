@@ -1,8 +1,8 @@
 ﻿//By DD
 var playercount=0;
 var botcount=0;
-var diflevel = "normal"; //问题根源
-
+var diflevel = "normal";
+var url = "http://localhost:3000/post";//local host
 
 function generate() {
     switch (diflevel) {
@@ -61,6 +61,17 @@ function paper() {
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
     setTimeout(check, 100);
+    /*Send to server*/
+    $.post(
+        url+'?data='+JSON.stringify({
+        'diff':diflevel,
+        'symbol': "paper",
+        'judge': i,
+        'number':randomnumber,
+        'botcount': botcount,
+        'playercount': playercount, 
+        }),
+        response);
     //alert(judge() + "!");/*pop up*/
 }
 function rock() {
@@ -82,6 +93,17 @@ function rock() {
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
     setTimeout(check, 100);
+    /*Send to server*/
+    $.post(
+        url+'?data='+JSON.stringify({
+        'diff':diflevel, 
+        'symbol': "rock",
+        'judge': i,
+        'number':randomnumber,
+        'botcount': botcount,
+        'playercount': playercount, 
+        }),
+        response);
 }
 function scissors() {
     generate();
@@ -103,18 +125,42 @@ function scissors() {
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
     setTimeout(check, 100);
-    
+    /*Send to server*/
+    $.post(
+        url+'?data='+JSON.stringify({
+        'diff':diflevel,
+        'symbol': "scissors", 
+        'judge': i,
+        'number':randomnumber,
+        'botcount': botcount,
+        'playercount': playercount, 
+        }),
+        response);
 }
+/*Response function (very important)*/
+function response(data){
+    var response = JSON.parse(data);
+    //console.log(data);
+    document.getElementById("difficulty").innerHTML = response['diff'];
+}
+
 function check() { /*count win lose and bo3 need add async to work porperly */
     a = 0;
     if (playercount == 3) {
         alert("Win");
-        window.location.assign("Rock-Paper-Scissors.html");
-        a = a + 1;
+        //window.location.assign("Rock-Paper-Scissors.html");
+        playercount = 0;//reset variables to 0
+        botcount = 0;
+        document.getElementById("playercount").innerHTML = playercount;//display them
+        document.getElementById("botcount").innerHTML = botcount;
     }
     if (botcount == 3) {
-        alert("Lose");
-        window.location.assign("Rock-Paper-Scissors.html");
+        alert("Lose");//same as above
+        playercount = 0;
+        botcount = 0;
+        document.getElementById("playercount").innerHTML = playercount;
+        document.getElementById("botcount").innerHTML = botcount;
+        //window.location.assign("Rock-Paper-Scissors.html");
     }
 }
 //for all 9 situastion
