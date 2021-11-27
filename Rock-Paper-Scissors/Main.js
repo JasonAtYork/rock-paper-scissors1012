@@ -3,6 +3,7 @@ var playercount=0;
 var botcount=0;
 var diflevel = "normal";
 var url = "http://localhost:3000/post";//local host
+var a;
 
 function generate() {
     switch (diflevel) {
@@ -61,6 +62,7 @@ function paper() {
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
     setTimeout(check, 100);
+    setTimeout(showgif, 1000);
     /*Send to server*/
     $.post(
         url+'?data='+JSON.stringify({
@@ -93,6 +95,7 @@ function rock() {
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
     setTimeout(check, 100);
+    setTimeout(showgif, 1000);
     /*Send to server*/
     $.post(
         url+'?data='+JSON.stringify({
@@ -125,6 +128,7 @@ function scissors() {
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
     setTimeout(check, 100);
+    setTimeout(showgif, 1000);
     /*Send to server*/
     $.post(
         url+'?data='+JSON.stringify({
@@ -153,6 +157,7 @@ function check() { /*count win lose and bo3 need add async to work porperly */
         botcount = 0;
         document.getElementById("playercount").innerHTML = playercount;//display them
         document.getElementById("botcount").innerHTML = botcount;
+        a = a + 1;
     }
     if (botcount == 3) {
         alert("Lose");//same as above
@@ -176,7 +181,12 @@ function Restart() { /*link to restart button*/
     botcount = 0;
 }
 function seldif() { /*link to select difficultiy button*/
-    diflevel = prompt("please enter a difficiculty(From Easy;Normal;Hard)");
+    diflevel = prompt("please enter a difficiculty by enter easy/normal/hard, or something special? (Entering other words will be set to normal).");
+    $.post(
+        url+'?data='+JSON.stringify({
+        'diff':diflevel, 
+        }),
+        response);
 }
 
 function history() {/*link to history button*/
@@ -185,7 +195,7 @@ function history() {/*link to history button*/
 }
 
 function showhis() {/*only for testing*/
-    alert(a+ "!");
+    alert( a+ "!");
 }
 
 function back() {/*link to history button*/
@@ -196,4 +206,7 @@ function quit() {/*link to history button*/
     window.location.assign("Rock-Paper-Scissors.html");
 }
 
+function showgif() {
+    document.getElementById("botchocie").setAttribute("src", "images/RPS2.gif");
+}
 //By DD
