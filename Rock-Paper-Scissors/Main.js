@@ -64,7 +64,7 @@ function paper() {
     }
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
-    setTimeout(response, 100);
+    setTimeout(response, 200);
     setTimeout(showgif, 1000);
     /*Send to server*/
     $.post(
@@ -100,7 +100,7 @@ function rock() {
     }
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
-    setTimeout(response, 100);
+    setTimeout(response, 200);
     setTimeout(showgif, 1000);
     /*Send to server*/
     $.post(
@@ -136,7 +136,7 @@ function scissors() {
     }
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
-    setTimeout(response, 100);
+    setTimeout(response, 200);
     setTimeout(showgif, 1000);
     /*Send to server*/
     $.post(
