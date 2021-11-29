@@ -3,7 +3,6 @@ var playercount=0;
 var botcount=0;
 var diflevel = "normal";
 var url = "http://localhost:3000/post";//local host
-var a;
 
 function generate() {
     switch (diflevel) {
@@ -156,14 +155,14 @@ function response(data){
     //console.log(data);
     document.getElementById("difficulty").innerHTML = response['diff'];
     if(response['playercount'] == 3){
-        alert("Win");
+        alert("Congratulation, You Win!");
         playercount = 0;
         botcount = 0;
         document.getElementById("playercount").innerHTML = playercount;
         document.getElementById("botcount").innerHTML = botcount;
     }
     if(response['botcount'] == 3){
-        alert("Lose");
+        alert("Unlucky, You Lose!");
         playercount = 0;
         botcount = 0;
         document.getElementById("playercount").innerHTML = playercount;
