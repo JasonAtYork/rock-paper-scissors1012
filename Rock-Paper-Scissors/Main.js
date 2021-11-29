@@ -72,9 +72,9 @@ function paper() {
         'diff':diflevel,
         'symbol': "paper",
         'judge': i,
-        'number':randomnumber,
-        'botcount': botcount,
-        'playercount': playercount, 
+        'number':randomnumber,       
+        'playercount': playercount,
+        'botcount': botcount, 
         }),
         response);
     //alert(judge() + "!");/*pop up*/
@@ -108,9 +108,9 @@ function rock() {
         'diff':diflevel, 
         'symbol': "rock",
         'judge': i,
-        'number':randomnumber,
-        'botcount': botcount,
-        'playercount': playercount, 
+        'number':randomnumber,       
+        'playercount': playercount,
+        'botcount': botcount, 
         }),
         response);
 }
@@ -144,9 +144,9 @@ function scissors() {
         'diff':diflevel,
         'symbol': "scissors", 
         'judge': i,
-        'number':randomnumber,
-        'botcount': botcount,
-        'playercount': playercount, 
+        'number':randomnumber,       
+        'playercount': playercount,
+        'botcount': botcount, 
         }),
         response);
 }
@@ -190,7 +190,7 @@ function Restart() { /*link to restart button*/
     botcount = 0;
 }
 function seldif() { /*link to select difficultiy button*/
-    diflevel = prompt("please enter a difficiculty by enter easy/normal/hard, or something special? (Entering other words will be set to normal).");
+    diflevel = prompt("Please select a difficulty by entering easy/normal/hard, or something special? (Entering other words will be set to normal).");
     $.post(
         url+'?data='+JSON.stringify({
         'diff':diflevel, 

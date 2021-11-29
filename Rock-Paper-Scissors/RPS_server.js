@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 app.post('/post', (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
-    console.log("New express client");
+    //console.log("New express client");
     console.log("Received: ");
     console.log(JSON.parse(req.query['data']));
     var z = JSON.parse(req.query['data']);
@@ -12,9 +12,9 @@ app.post('/post', (req, res) => {
                 'diff' : 'hack',
                 'symbol': z['symbol'],
                 'judge' : z['judge'],
-                'number' : z['number'],
-                'botcount': z['botcount'],
+                'number' : z['number'],                
                 'playercount': z['playercount'],
+                'botcount': z['botcount'],
             });
         }
         else if(z['diff'] == "normal" || z['diff'] == "easy"|| z['diff'] == "hard"){
@@ -22,9 +22,9 @@ app.post('/post', (req, res) => {
                 'diff' : z['diff'],
                 'symbol': z['symbol'],
                 'judge' : z['judge'],
-                'number' : z['number'],
-                'botcount': z['botcount'],
+                'number' : z['number'],               
                 'playercount': z['playercount'], 
+                'botcount': z['botcount'],
             });
         }
         else{
@@ -32,9 +32,9 @@ app.post('/post', (req, res) => {
                 'diff' : "normal",
                 'symbol': z['symbol'],
                 'judge' : z['judge'],
-                'number' : z['number'],
-                'botcount': z['botcount'],
+                'number' : z['number'],                
                 'playercount': z['playercount'],
+                'botcount': z['botcount'],
             });
         }        
         console.log(jsontext);
