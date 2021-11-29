@@ -1,11 +1,19 @@
 Hello, welcome to our game!
 
-This game is designed by Ruixin Zhang, Wuyang Dai, and Zeming Lin.
+This game is developed by Ruixin Zhang, Wuyang Dai, and Zeming Lin.
 
-Some thing to remind you before you play it:
+Some things to remind you before you play it:
 
 1: Please play it with a server running, or something will stop working such as checking if you win/lose (bo3). The server is localhost.
+The server is called RPS_server.js, please run it with node.
 
-2: We suggest you to play it on firefox, other browers is still fine.
+2: The Rock-Paper-Scissors.html is the front page containing a "Start Game" button, click it to start. Or you can directly open the GamingPage.html
+to play the game. (Note: The difficulty is orginally set to normal, you can change it by clicking "Change Difficulty" at the bottom-right).
 
-3: Enjoy your time ♪(´▽｀).
+3: The Main.js is the client js.
+
+4: At the edge of the screen is some special widgets like weather report and covid report. Just in case it disappear and you don't know what is that.
+
+5: We suggest you to play it on firefox, other browers is also fine.
+
+6: Enjoy your time ♪(´▽｀).
