@@ -69,9 +69,9 @@ function paper() {
         'diff':diflevel,
         'symbol': "paper",
         'judge': i,
-        'number':randomnumber,
-        'botcount': botcount,
-        'playercount': playercount, 
+        'number':randomnumber,       
+        'playercount': playercount,
+        'botcount': botcount, 
         }),
         response);
     //alert(judge() + "!");/*pop up*/
@@ -102,9 +102,9 @@ function rock() {
         'diff':diflevel, 
         'symbol': "rock",
         'judge': i,
-        'number':randomnumber,
-        'botcount': botcount,
-        'playercount': playercount, 
+        'number':randomnumber,       
+        'playercount': playercount,
+        'botcount': botcount, 
         }),
         response);
 }
@@ -135,9 +135,9 @@ function scissors() {
         'diff':diflevel,
         'symbol': "scissors", 
         'judge': i,
-        'number':randomnumber,
-        'botcount': botcount,
-        'playercount': playercount, 
+        'number':randomnumber,       
+        'playercount': playercount,
+        'botcount': botcount, 
         }),
         response);
 }
