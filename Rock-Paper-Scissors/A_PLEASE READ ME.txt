@@ -8,7 +8,8 @@ Some things to remind you before you play it:
 The server is called RPS_server.js, please run it with node.
 
 2: The Rock-Paper-Scissors.html is the front page containing a "Start Game" button, click it to start. Or you can directly open the GamingPage.html
-to play the game. (Note: The difficulty is orginally set to normal, you can change it by clicking "Change Difficulty" at the bottom-right).
+to play the game. (Note: The difficulty is orginally set to normal, you can change it by clicking "Change Difficulty" at the bottom-right， the hacking
+code is "whosyourdaddy", you can always win in this mode).
 
 3: The Main.js is the client js.
 
