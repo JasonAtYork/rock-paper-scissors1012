@@ -38,6 +38,6 @@ Instead of making the program choose from 3 options then judge it is a win or lo
 <li>User can see the covid-19 report on the edge of the screen.
 <li>User can see the stock trends on the edge of the screen.
 
-**Wireframe Design**
+**Wireframe Design**<br>
 This is the overall design, something will be changed in the final work
 <img src="Wireframes/Overall Design.jpg"/>
