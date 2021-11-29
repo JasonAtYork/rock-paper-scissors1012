@@ -1,4 +1,4 @@
-﻿//By DD
+﻿//By DD and Ruixin
 var playercount=0;
 var botcount=0;
 var diflevel = "normal";
@@ -199,10 +199,7 @@ function response(data){
 function start() { /*link to start button and the right page*/
     window.location.assign("GamingPage.html");
 }
-function Restart() { /*link to restart button*/   
-    playercount = 0;
-    botcount = 0;
-}
+
 function seldif() { /*link to select difficultiy button*/
     diflevel = prompt("Please select a difficulty by entering easy/normal/hard, or something special? (Entering other words will be set to normal).");
     $.post(
@@ -210,19 +207,6 @@ function seldif() { /*link to select difficultiy button*/
         'diff':diflevel, 
         }),
         response);
-}
-
-function history() {/*link to history button*/
-    window.location.assign("History.html");
-    //document.getElementById("xxxx").innerHTML;/*need attach div the show history*/
-}
-
-function showhis() {/*only for testing*/
-    alert( a+ "!");
-}
-
-function back() {/*link to history button*/
-    window.location.assign("Rock-Paper-Scissors.html");
 }
 
 function quit() {/*link to history button*/
