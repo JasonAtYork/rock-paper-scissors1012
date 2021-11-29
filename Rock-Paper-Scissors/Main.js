@@ -155,10 +155,24 @@ function response(data){
     var response = JSON.parse(data);
     //console.log(data);
     document.getElementById("difficulty").innerHTML = response['diff'];
+    if(response['playercount'] == 3){
+        alert("Win");
+        playercount = 0;
+        botcount = 0;
+        document.getElementById("playercount").innerHTML = playercount;
+        document.getElementById("botcount").innerHTML = botcount;
+    }
+    if(response['botcount'] == 3){
+        alert("Lose");
+        playercount = 0;
+        botcount = 0;
+        document.getElementById("playercount").innerHTML = playercount;
+        document.getElementById("botcount").innerHTML = botcount;
+    }
 }
 
-function check() { /*count win lose and bo3 need add async to work porperly */
-    a = 0;
+//function check() { /*count win lose and bo3 need add async to work porperly */
+    /*a = 0;
     if (playercount == 3) {
         alert("Win");
         //window.location.assign("Rock-Paper-Scissors.html");
@@ -176,7 +190,7 @@ function check() { /*count win lose and bo3 need add async to work porperly */
         document.getElementById("botcount").innerHTML = botcount;
         //window.location.assign("Rock-Paper-Scissors.html");
     }
-}
+}*/
 //for all 9 situastion
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
