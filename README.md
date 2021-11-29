@@ -32,6 +32,7 @@ Instead of making the program choose from 3 options then judge it is a win or lo
 <li>User can see a score board presented on the center of the screen.
 <li>User will receive a pop up “You Win” that indicates he/she wins if he/she wins 3 games.
 <li>A pop up “You Lose” will be shown if the user loses 3 games.
+<li>User can see the current difficulty on the bottom-right of the screen in the game.
 <li>User can change the difficulty by clicking the “Change Difficulty” button on the bottom-right of the screen in the game.
 <li>User can enter hacking mode by entering specific code. (If he/she enters the code he/she can always win in this mode).
 <li>User can see the weather broadcast on the edge of the screen.
