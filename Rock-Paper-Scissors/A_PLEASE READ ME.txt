@@ -1,0 +1,11 @@
+Hello, welcome to our game!
+
+This game is designed by Ruixin Zhang, Wuyang Dai, and Zeming Lin.
+
+Some thing to remind you before you play it:
+
+1: Please play it with a server running, or something will stop working such as checking if you win/lose (bo3). The server is localhost.
+
+2: We suggest you to play it on firefox, other browers is still fine.
+
+3: Enjoy your time ♪(´▽｀).
