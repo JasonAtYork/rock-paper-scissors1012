@@ -35,8 +35,8 @@ function judge() {
         return "tie";
     }
     if (randomnumber >= 6) {
-        botcount = botcount + 1;/*having iussue that this is counting 5 times not 1)
-        alert(botcount);/*record history*/
+        botcount = botcount + 1;
+        //alert(botcount);/*record history*/
         return "lose";
     }
 }
@@ -48,15 +48,18 @@ function paper() {
     if (i == "tie") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem yellow";
     }
     if (i == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem green";
  
     }
     if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem red";
        
     }
     document.getElementById("botcount").innerHTML = botcount;
@@ -82,15 +85,18 @@ function rock() {
     if (i == "tie") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem yellow";
     }
     if (i == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem green";
    
     }
     if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem red";
     }
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
@@ -114,15 +120,18 @@ function scissors() {
     if (i == "tie") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem yellow";
     }
     if (i == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem green";
 
     }
     if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem red";
   
     }
     document.getElementById("botcount").innerHTML = botcount;
@@ -208,5 +217,6 @@ function quit() {/*link to history button*/
 
 function showgif() {
     document.getElementById("botchocie").setAttribute("src", "images/RPS2.gif");
+    document.getElementById("botchocie").style.boxShadow = "0 0 0rem 0rem";
 }
 //By DD
