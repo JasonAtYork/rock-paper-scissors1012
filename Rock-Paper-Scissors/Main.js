@@ -53,13 +53,13 @@ function paper() {
     if (i == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
-        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem green";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem red";
  
     }
     if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
-        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem red";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem green";
        
     }
     document.getElementById("botcount").innerHTML = botcount;
@@ -90,13 +90,13 @@ function rock() {
     if (i == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
-        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem green";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem red";
    
     }
     if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/scissors.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
-        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem red";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem green";
     }
     document.getElementById("botcount").innerHTML = botcount;
     document.getElementById("playercount").innerHTML = playercount;
@@ -125,13 +125,13 @@ function scissors() {
     if (i == "lose") {
         document.getElementById("botchocie").setAttribute("src", "images/rock.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
-        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem green";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem red";
 
     }
     if (i == "win") {
         document.getElementById("botchocie").setAttribute("src", "images/paper.jpg");/*need attach picture*/
         document.getElementById("botchocie").style.display = "inline";
-        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem red";
+        document.getElementById("botchocie").style.boxShadow = "0 0 2rem 0.3rem green";
   
     }
     document.getElementById("botcount").innerHTML = botcount;
