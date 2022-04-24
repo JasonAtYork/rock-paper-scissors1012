@@ -3,6 +3,7 @@ var playercount=0;
 var botcount=0;
 var diflevel = "normal";
 var url = "http://localhost:3000/post";//local host
+//Testing
 
 function generate() {
     switch (diflevel) {
